@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktivt Rymdspel - Marko Bradaric Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body class="swedish">
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-left">
+            <a href="index.html" class="logo">
+                <span class="logo-thick">Marko Bradaric</span>
+                <span class="logo-thin"> / Portfolio</span>
+            </a>
+        </div>
+        
+        <div class="nav-center">
+            <a href="index.html" class="nav-link">
+                <span class="swedish">Portfolio</span>
+                <span class="english">Portfolio</span>
+            </a>
+            <a href="about.html" class="nav-link">
+                <span class="swedish">Om mig</span>
+                <span class="english">About me</span>
+            </a>
+        </div>
+        
+        <div class="nav-right">
+            <div class="language-toggle">
+                <button class="lang-btn" id="langToggle">English</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail Content -->
+    <div class="project-detail">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            <span class="swedish">Tillbaka till Portfolio</span>
+            <span class="english">Back to Portfolio</span>
+        </a>
+        
+        <div class="detail-header">
+            <h1 class="detail-title">Interaktivt Rymdspel</h1>
+            
+            <div class="project-hero-image">
+                <img src="spelfront.jpg" alt="Interaktivt rymdspel" style="width: 100%; height: 100%;">
+            </div>
+            <p class="image-caption swedish">Objektorienterat rymdspel med boss fights</p>
+            <p class="image-caption english">Object-oriented space game with boss fights</p>
+            
+            <div class="detail-overview swedish">
+                I det här projektet ville vi skapa ett spel som kombinerar action, rymd och strategi – inspirerat av klassiska arkadspel som Galaxy Attack och Space Invaders, men med vår egen twist. Spelet utvecklades som en del av en kurs i objektorienterad programmering med fokus på att använda externa bibliotek.
+                <br><br>
+                Spelaren styr ett rymdskepp som måste undvika och skjuta ner fallande meteorer, och efter en viss poängsumma dyker ett stort monster upp som fungerar som en boss. Ju mer spelaren skjuter på monstret, desto fler poäng får man.
+            </div>
+            <div class="detail-overview english">
+                In this project, we wanted to create a game that combines action, space, and strategy – inspired by classic arcade games like Galaxy Attack and Space Invaders, but with our own twist. The game was developed as part of a course in object-oriented programming focusing on using external libraries.
+                <br><br>
+                The player controls a spaceship that must avoid and shoot down falling meteors, and after a certain score, a large monster appears that functions as a boss. The more the player shoots at the monster, the more points they earn.
+            </div>
+        </div>
+        
+        <div class="detail-section">
+            <h3 class="swedish">Spelkoncept och uttryck</h3>
+            <h3 class="english">Game Concept and Expression</h3>
+            <p class="swedish">Vi skapade ett spel som balanserar retroinspiration med moderna element. Med inspiration från klassiska 2D-spel kombinerade vi den nostalgiska känslan med dynamiska visuella effekter, ljud och rörelser för att skapa en engagerande upplevelse.</p>
+            <p class="english">We created a game that balances retro inspiration with modern elements. With inspiration from classic 2D games, we combined the nostalgic feeling with dynamic visual effects, sounds, and movements to create an engaging experience.</p>
+            
+            <p class="swedish">Det som gör vårt uttryck intressant är balansen mellan det retroinspirerade och det moderna. Vi har tagit inspiration från äldre 2D-spel men försökt skapa en mer dynamisk känsla. Begrepp som "reaktivitet", "spelmekanik" och "progression" beskriver väl vårt uttryck – varje del av spelet ska svara på spelarens handlingar och belöna skicklighet.</p>
+            <p class="english">What makes our expression interesting is the balance between retro-inspired and modern. We've taken inspiration from older 2D games but tried to create a more dynamic feel. Concepts like "reactivity", "game mechanics", and "progression" well describe our expression – every part of the game should respond to the player's actions and reward skill.</p>
+            
+            <p class="swedish"><strong>Kärnelement i spelet:</strong></p>
+            <p class="english"><strong>Core elements of the game:</strong></p>
+            
+            <ul class="swedish">
+                <li>Spelstyrning med tangentbord eller mus</li>
+                <li>Progresiv svårighetsgrad med ökande meteorhastighet</li>
+                <li>Boss fight-system som aktiveras vid poänggräns</li>
+                <li>Omfattande poängsystem med kombos och multiplikatorer</li>
+            </ul>
+            <ul class="english">
+                <li>Game control with keyboard or mouse</li>
+                <li>Progressive difficulty with increasing meteor speed</li>
+                <li>Boss fight system activated at score threshold</li>
+                <li>Comprehensive scoring system with combos and multipliers</li>
+            </ul>
+        </div>
+        
+        <div class="detail-section">
+            <h3 class="swedish">Teknisk implementering</h3>
+            <h3 class="english">Technical Implementation</h3>
+            <p class="swedish">Projektet implementerades med objektorienterad programmering i JavaScript med hjälp av p5.play-biblioteket. Arbetet involverade skapandet av flera komplexa klasser och hantering av realtidsinteraktioner.</p>
+            <p class="english">The project was implemented with object-oriented programming in JavaScript using the p5.play library. The work involved creating several complex classes and handling real-time interactions.</p>
+            
+            <p class="swedish"><strong>Tekniska utmaningar och lösningar:</strong></p>
+            <p class="english"><strong>Technical challenges and solutions:</strong></p>
+            
+            <ul class="swedish">
+                <li><strong>Objektorienterad struktur:</strong> Vi började med att skapa de grundläggande klasserna för spelaren, projektiler, meteorer och bossen. Att arbeta objektorienterat hjälpte oss att hålla koden organiserad, men det tog tid att förstå hur instanser och metoder fungerade tillsammans i p5.play.</li>
+                <li><strong>Kollisionsdetektering:</strong> En av de största utmaningarna var att få kollisioner och rörelser att fungera smidigt mellan objekten. Vi implementerade ett effektivt kollisionssystem som kontrollerar när projektiler träffar meteorer eller bossen.</li>
+                <li><strong>Statemanagement:</strong> Implementering av olika spelstatusar (start, spel, paus, game over, boss fight) krävde noggrant tillståndshanteringssystem.</li>
+            </ul>
+            <ul class="english">
+                <li><strong>Object-oriented structure:</strong> We started by creating the basic classes for player, projectiles, meteors, and the boss. Working object-oriented helped us keep the code organized, but it took time to understand how instances and methods worked together in p5.play.</li>
+                <li><strong>Collision detection:</strong> One of the biggest challenges was getting collisions and movements to work smoothly between objects. We implemented an efficient collision system that checks when projectiles hit meteors or the boss.</li>
+                <li><strong>State management:</strong> Implementing different game states (start, play, pause, game over, boss fight) required a careful state management system.</li>
+            </ul>
+            
+            <p class="swedish"><strong>Spelmekanik justeringar:</strong></p>
+            <p class="english"><strong>Game mechanics adjustments:</strong></p>
+            
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-value">15+</div>
+                    <div class="stat-label swedish">Iterationer</div>
+                    <div class="stat-label english">Iterations</div>
+                    <p class="swedish" style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">Justeringar av hastighet och svårighet</p>
+                    <p class="english" style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">Speed and difficulty adjustments</p>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value">7</div>
+                    <div class="stat-label swedish">Klasser</div>
+                    <div class="stat-label english">Classes</div>
+                    <p class="swedish" style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">Objektorienterade komponenter</p>
+                    <p class="english" style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">Object-oriented components</p>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value">1000</div>
+                    <div class="stat-label swedish">Poänggräns</div>
+                    <div class="stat-label english">Score Threshold</div>
+                    <p class="swedish" style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">För boss fight aktivering</p>
+                    <p class="english" style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">For boss fight activation</p>
+                </div>
+            </div>
+            
+            <p class="swedish">För att komma vidare använde vi främst exempel från p5.play:s dokumentation, YouTube-tutorials samt ChatGPT för felsökning och förbättring av kod. Mycket tid gick åt till att testa olika varianter av spelmekanik – till exempel att justera hastigheter, lägga till poängräkning, och finjustera bossens rörelser.</p>
+            <p class="english">To move forward, we mainly used examples from p5.play's documentation, YouTube tutorials, and ChatGPT for debugging and code improvement. A lot of time was spent testing different variants of game mechanics – for example, adjusting speeds, adding scorekeeping, and fine-tuning the boss's movements.</p>
+        </div>
+        
+        <div class="detail-section">
+            <h3 class="swedish">Designkritik och förbättringar</h3>
+            <h3 class="english">Design Critique and Improvements</h3>
+            <p class="swedish">Under designkritiken fick vi värdefull feedback som hjälpte oss att identifiera områden för förbättring och framtida utveckling.</p>
+            <p class="english">During design critique, we received valuable feedback that helped us identify areas for improvement and future development.</p>
+            
+            <p class="swedish"><strong>Mottagen feedback:</strong></p>
+            <p class="english"><strong>Received feedback:</strong></p>
+            
+            <ul class="swedish">
+                <li><strong>Tydlig idé och fungerande mekanik:</strong> Spelet hade en tydlig vision och välfungerande grundläggande spelmekanik som uppskattades av testare.</li>
+                <li><strong>Visuell förbättringspotential:</strong> Feedback pekade på att spelet kunde bli ännu mer visuellt levande med fler effekter och animationer.</li>
+                <li><strong>Ljuddesign:</strong> Förslag på förbättrad ljuddesign för att förstärka spelupplevelsen.</li>
+            </ul>
+            <ul class="english">
+                <li><strong>Clear idea and working mechanics:</strong> The game had a clear vision and well-functioning basic game mechanics that were appreciated by testers.</li>
+                <li><strong>Visual improvement potential:</strong> Feedback pointed out that the game could become even more visually alive with more effects and animations.</li>
+                <li><strong>Sound design:</strong> Suggestions for improved sound design to enhance the gaming experience.</li>
+            </ul>
+            
+            <p class="swedish"><strong>Implementerade och planerade förbättringar:</strong></p>
+            <p class="english"><strong>Implemented and planned improvements:</strong></p>
+            
+            <ul class="swedish">
+                <li><strong>Explosionseffekter:</strong> Ett förslag var att lägga till fler visuella effekter, exempelvis explosioner när meteorer träffas eller när bossen tar skada. Vi hann inte implementera allt detta, men planerar att lägga till det i framtida versioner.</li>
+                <li><strong>Partikeleffekter:</strong> Ytterligare förslag inkluderade partikeleffekter för projektiler och träffmarkeringar.</li>
+                <li><strong>UI-förbättringar:</strong> Förbättringar av användargränssnittet för bättre spelarinformation och navigering.</li>
+            </ul>
+            <ul class="english">
+                <li><strong>Explosion effects:</strong> One suggestion was to add more visual effects, such as explosions when meteors are hit or when the boss takes damage. We didn't have time to implement all of this, but plan to add it in future versions.</li>
+                <li><strong>Particle effects:</strong> Additional suggestions included particle effects for projectiles and hit markers.</li>
+                <li><strong>UI improvements:</strong> Improvements to the user interface for better player information and navigation.</li>
+            </ul>
+        </div>
+        
+        <div class="detail-section">
+            <h3 class="swedish">Resultat och lärdomar</h3>
+            <h3 class="english">Results and Learnings</h3>
+            <div class="role-highlight">
+                <p class="swedish"><strong>Slutresultat:</strong> Vi utvecklade ett fullt fungerande interaktivt rymdspel med avancerade spelmekaniker inklusive boss fights, progressiv svårighetsgrad och omfattande poängsystem. Spelet demonstrerar effektiv användning av objektorienterad programmering och externa bibliotek.</p>
+                
+                <p class="swedish"><strong>Tekniska lärdomar:</strong> Projektet har gett oss en bättre förståelse för objektorienterad programmering och hur man bygger upp ett spel från grunden. Vi har lärt oss:</p>
+                <ul class="swedish">
+                    <li>Hur man strukturerar komplexa applikationer med klasser och objekt</li>
+                    <li>Användning av externa bibliotek (p5.play) för spelutveckling</li>
+                    <li>Implementering av realtids kollisionsdetektering</li>
+                    <li>Statemanagement i spelapplikationer</li>
+                    <li>Optimerings tekniker för prestanda i spel</li>
+                </ul>
+                
+                <p class="swedish"><strong>Design- och processlärdomar:</strong></p>
+                <ul class="swedish">
+                    <li>Vikten av iterativ design och kontinuerlig testning av spelmekanik</li>
+                    <li>Hur ljud, grafik och spelmekanik tillsammans skapar en helhetsupplevelse</li>
+                    <li>Balansering av svårighetsgrad för att hålla spelare engagerade</li>
+                    <li>Värde av användarfeedback i spelutvecklingsprocessen</li>
+                </ul>
+                
+                <p class="swedish"><strong>Framtida möjligheter:</strong> Projektet har lagt en solid grund för fortsatt spelutveckling. Potentiella nästa steg inkluderar:</p>
+                <ul class="swedish">
+                    <li>Utöka spelet med fler banor och bossar</li>
+                    <li>Implementera power-ups och specialförmågor</li>
+                    <li>Skapa en online highscore-tabell</li>
+                    <li>Porta spelet till mobilplattformar</li>
+                    <li>Utveckla multiplayer-funktionalitet</li>
+                </ul>
+                
+                <p class="english"><strong>Final result:</strong> We developed a fully functional interactive space game with advanced game mechanics including boss fights, progressive difficulty, and comprehensive scoring systems. The game demonstrates effective use of object-oriented programming and external libraries.</p>
+                
+                <p class="english"><strong>Technical learnings:</strong> The project has given us a better understanding of object-oriented programming and how to build a game from scratch. We have learned:</p>
+                <ul class="english">
+                    <li>How to structure complex applications with classes and objects</li>
+                    <li>Use of external libraries (p5.play) for game development</li>
+                    <li>Implementation of real-time collision detection</li>
+                    <li>State management in game applications</li>
+                    <li>Optimization techniques for game performance</li>
+                </ul>
+                
+                <p class="english"><strong>Design and process learnings:</strong></p>
+                <ul class="english">
+                    <li>The importance of iterative design and continuous testing of game mechanics</li>
+                    <li>How sound, graphics, and game mechanics together create a holistic experience</li>
+                    <li>Balancing difficulty to keep players engaged</li>
+                    <li>Value of user feedback in the game development process</li>
+                </ul>
+                
+                <p class="english"><strong>Future opportunities:</strong> The project has laid a solid foundation for continued game development. Potential next steps include:</p>
+                <ul class="english">
+                    <li>Expanding the game with more levels and bosses</li>
+                    <li>Implementing power-ups and special abilities</li>
+                    <li>Creating an online highscore table</li>
+                    <li>Porting the game to mobile platforms</li>
+                    <li>Developing multiplayer functionality</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text swedish">Kontakta mig för samarbeten eller frågor om mina projekt</p>
+            <p class="footer-text english">Contact me for collaborations or questions about my projects</p>
+            
+            <div class="contact-info">
+                <a href="mailto:markobradaric5@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>markobradaric5@gmail.com</span>
+                </a>
+                <a href="linkedin.com/in/marko-bradaric-48a245311" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            
+            <p style="margin-top: 40px; opacity: 0.7;">© 2026 Marko Bradaric</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<script>
+// ===== language.js kod =====
+console.log('=== LANGUAGE SCRIPT (inline) ===');
+
+const langToggle = document.getElementById('langToggle');
+const body = document.body;
+
+if (langToggle) {
+    console.log('✅ Button found!');
+    
+    const savedLang = localStorage.getItem('portfolioLanguage');
+    if (savedLang === 'english') {
+        body.classList.remove('swedish');
+        body.classList.add('english');
+        langToggle.textContent = 'Svenska';
+        console.log('Set to English');
+    } else {
+        body.classList.remove('english');
+        body.classList.add('swedish');
+        langToggle.textContent = 'English';
+        console.log('Set to Swedish');
+    }
+    
+    langToggle.addEventListener('click', () => {
+        console.log('Button clicked!');
+        if (body.classList.contains('swedish')) {
+            body.classList.remove('swedish');
+            body.classList.add('english');
+            langToggle.textContent = 'Svenska';
+            localStorage.setItem('portfolioLanguage', 'english');
+            console.log('Changed to English');
+        } else {
+            body.classList.remove('english');
+            body.classList.add('swedish');
+            langToggle.textContent = 'English';
+            localStorage.setItem('portfolioLanguage', 'swedish');
+            console.log('Changed to Swedish');
+        }
+    });
+} else {
+    console.error('Button not found!');
+}
+
+// ===== BACK TO TOP FUNCTIONALITY =====
+const backToTopBtn = document.getElementById('backToTop');
+
+// Visa/dölj knapp baserat på scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopBtn.classList.add('show');
+    } else {
+        backToTopBtn.classList.remove('show');
+    }
+});
+
+// Smidig scroll till toppen när knappen klickas
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+</script>
+</body>
+</html>
